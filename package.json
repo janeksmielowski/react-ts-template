@@ -51,7 +51,7 @@
     "webpack-dev-server": "3.11.0"
   },
   "scripts": {
-    "build": "yarn build:prod",
+    "build": "yarn test && yarn build:prod",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",

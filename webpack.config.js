@@ -19,7 +19,7 @@ module.exports = function(env, argv) {
             path: path.resolve(__dirname, 'dist'),
             publicPath: '/'
         },
-        target: !isProduction && 'web',
+        target: 'web',
         devtool: !isProduction && 'source-map',
         module: {
             rules: [
