@@ -6,6 +6,8 @@ This project contains a basic [React](https://github.com/facebook/react) applica
 - [Babel](https://github.com/babel/babel)
 - [ESLint](https://github.com/eslint/eslint)
 - [Prettier](https://github.com/prettier/prettier)
+- [Jest](https://github.com/facebook/jest)
+- [Styled Components](https://github.com/styled-components/styled-components)
 
 ## Available Scripts
 

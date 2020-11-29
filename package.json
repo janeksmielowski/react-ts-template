@@ -1,6 +1,6 @@
 {
   "name": "react-ts-template",
-  "description": "React Typescript application template, with babel, webpack and eslint configuration",
+  "description": "React Typescript application template, with Babel, Webpack and ESLint configuration",
   "license": "MIT",
   "version": "0.1.0",
   "private": true,
