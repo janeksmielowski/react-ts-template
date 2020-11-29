@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
+    font-size: 2rem;
     text-align: center;
 `;
 

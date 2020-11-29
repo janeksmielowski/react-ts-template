@@ -19,23 +19,20 @@ module.exports = function(env, argv) {
             path: path.resolve(__dirname, 'dist'),
             publicPath: '/'
         },
+        target: !isProduction && 'web',
         devtool: !isProduction && 'source-map',
         module: {
             rules: [
                 {
                     test: /\.(js|ts)x?$/,
                     exclude: /node_modules/,
-                    use: ['babel-loader']
+                    loader: 'babel-loader',
+                    options: {
+                        cacheDirectory: true
+                    }
                 },
                 {
-                    test: /\.css$/,
-                    use: [
-                        'style-loader',
-                        'css-loader'
-                    ]
-                },
-                {
-                    exclude: [/\.(js|ts)x?$/, /\.css$/, /\.html$/, /\.json$/],
+                    exclude: [/\.(js|ts)x?$/, /\.html$/, /\.json$/],
                     loader: 'file-loader',
                     options: {
                         name: isProduction ? '[name].[contenthash:4].[ext]' : '[name].[ext]'
