@@ -21,7 +21,7 @@
     "noImplicitAny": false,
     "jsx": "react-jsx",
     "paths": {
-      "@root/*": ["src/*"]
+      "@root/*": ["./src/*"]
     }
   },
   "include": [
