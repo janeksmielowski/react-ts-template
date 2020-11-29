@@ -61,9 +61,9 @@ module.exports = function(env, argv) {
         },
         plugins: [
             new ProgressPlugin(),
-            // new ESLintPlugin({
-            //     extensions: ['.js', '.jsx', '.ts', '.tsx']
-            // }),
+            new ESLintPlugin({
+                extensions: ['.js', '.jsx', '.ts', '.tsx']
+            }),
             new CleanWebpackPlugin(),
             new CopyWebpackPlugin({
                 patterns: [
