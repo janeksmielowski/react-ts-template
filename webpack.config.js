@@ -26,10 +26,16 @@ module.exports = function(env, argv) {
                 {
                     test: /\.(js|ts)x?$/,
                     exclude: /node_modules/,
-                    loader: 'babel-loader',
-                    options: {
-                        cacheDirectory: true
-                    }
+                    use: [
+                        {
+                            loader: 'babel-loader',
+                            options: {
+                                cacheDirectory: true
+                            }
+                        }, {
+                            loader: 'ts-loader'
+                        }
+                    ]
                 },
                 {
                     exclude: [/\.(js|ts)x?$/, /\.html$/, /\.json$/],
